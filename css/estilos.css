@@ -1,0 +1,526 @@
+
+/*Google Fons       recomendable realizar la importacion del mismo archivo .css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
+
+*{
+    box-sizing: border-box;     /*mantiene la proporicion de la caja*/
+
+
+    /*desplazamieento suave cuando se usa navevacion por ancla
+    
+        scroll-behavior: smooth scroll;
+    */
+
+
+}
+
+html{
+    font-family: "Montserrat", sans-serif;
+
+
+    scroll-behavior: smooth;    /*para q el desplazamiento sea mas suave*/
+}
+
+body{
+
+
+/*
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: "Gupter", serif;
+*/
+
+/*
+background-color: gray !important;
+background-image: url("../imagenes/788.png");
+*/
+
+
+/*
+imagen mosaico
+
+background-image: url("https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGxhbmRzY2FwZXxlbnwwfHwwfHx8MA%3D%3D");
+
+
+background-color: teal;
+background-image: url("https://plus.unsplash.com/premium_photo-1668024966086-bd66ba04262f?q=80&w=2092&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+
+
+*/
+
+
+    margin: 0;
+
+}
+
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.25em;
+}
+
+
+
+/*botones*/
+button{
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+
+button:hover{
+    background-color: rgb(101,33,165);
+}
+
+
+div.container{
+    max-width: 1400px;  /*tamaño nromal tenga un ancho maximo determinado*/
+    margin: auto;
+}
+
+section#programaya div.container h2 span.coloracento{
+    color: blueviolet;
+}
+
+
+/*** header ***/
+header{
+    background-color: rgb(245,245,245);
+}
+
+
+header div.container p.logo{
+    margin: 0;    
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+
+header div.container{
+    
+    display: flex;      /*para colcoar a la derecha los demas elementos*/
+    flex-direction: column;     /*para q se ordenen en una columna*/
+    align-items: center;
+}
+
+
+header div nav{
+    display: flex;          /*para colcoar a la derecha los demas elementos*/
+    flex-direction: column; /*para q se ordenen en una columna*/
+    align-items: center;
+
+    padding-bottom: 25px;
+}
+
+header div nav a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header div nav a:hover{
+    color: blueviolet;
+}
+
+
+
+/*** section ***/
+section#hero{
+
+    display: flex;              /*para colcoar a la derecha los demas elementos*/
+    flex-direction: column;     /*para q se ordenen en una columna*/
+    align-items: center;        /*centrar el boton*/    
+    justify-content: center;    
+    
+    text-align: center; 
+
+    height: 90vh;      /*ocupar un porcion de espacio de la pantalla altura*/
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),  url("../imagenes/media/hero.jpg");
+
+    background-repeat: no-repeat;
+    background-size: cover;                 /*ocupe todo el espacio disponible */
+    background-position: center center;     /*centrar en todo los lados y ocupe todo el espacio dispobbile*/
+
+}
+
+section#hero h1{
+    color: #fff;
+}
+
+section#hero button{
+    font-size: 1.75em;
+}
+
+
+
+section#programaya div.container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+
+section#nuestrosprogramas{
+    background-color: rgb(30,30,30);
+    color: #fff;
+    text-align: center;
+}
+
+section#nuestrosprogramas div.container{
+    padding: 150px 12px;
+}   
+
+
+section#nuestrosprogramas div.container div.carta p{
+    display: none;  /* para q no se visualice en la moviles*/
+}
+
+
+section#nuestrosprogramas div.container h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+
+
+section#nuestrosprogramas div.container div.carta{
+       
+    background-size: cover;                 /*ocupe todo el espacio disponible */
+    background-position: center center;     /*centrar en todo los lados y ocupe todo el espacio dispobbile*/
+
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+section#nuestrosprogramas div.container div.carta:first-child{
+
+    background-image:
+    linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),  url("../imagenes/media/front-end.jpg");
+
+}
+
+
+
+section#nuestrosprogramas div.container div.carta:nth-child(2){
+
+    background-image:
+    linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),  url("../imagenes/media/full-stack.jpg");
+
+
+}
+
+
+section#nuestrosprogramas div.container div.carta:nth-child(3){
+
+    background-image:
+    linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),  url("../imagenes/media/python.jpg");
+
+
+}
+
+
+/***** CARACTERISTICAS *******/
+section#caracteristicas div.container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+
+section#caracteristicas div.container ul li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+
+
+
+/***** FINAL *******/
+section#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: #fff;
+    height: 80vh;
+}
+
+section#final h2{
+    font-size: 6vw;
+}
+
+section#final button{
+    font-size: 3vw;
+}
+
+
+
+
+/***** FOOTER *******/
+footer {
+    background-color: rgb(230,220,230);
+}
+
+footer p {
+    margin: 0;
+    color: rgb(100,100,100);
+    padding: 12px;
+}
+
+footer div.container {
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+
+
+/*************** 57:20 Estilizado CSS Escritorio *****************/
+/** cuando la pantalla supere los 720px **/
+@media(min-width: 720px) {
+
+    header{
+        position: fixed;        /*el menu se mantenga fijo*/
+        width: 100%;
+    }
+
+    header div.container{        
+        flex-direction: row;
+        justify-content: space-between;     /*una distribucion*/
+    }   
+
+    header div.container nav{
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-right: 20px;
+    }
+
+
+    section#hero h1{
+        font-size: 5em;
+    }
+
+    section#programaya div.container{
+        display: flex;
+        justify-content: space-evenly;    /*para centar mejor el div.texto*/
+    }
+    
+
+
+    section#programaya div.container div.texto{
+        width: 50%;     /*reducir el tamaño */
+        text-align: initial;    /*inidcamos q la imagen y los texto se junten*/
+
+        padding-left: 30px;
+        max-width: 600px;   /*ancho maximo*/
+
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    section#programaya h2{
+        margin-top: 0px;
+    }
+
+
+
+
+    #programaya .imagen-container {
+            
+        background-image:   linear-gradient(
+                                rgba(0,0,0,0.5),
+                                rgba(0,0,0,0.5)
+                            ),  url("../imagenes/media/somos-proya.jpg");
+
+        background-size: cover;
+        background-position: center center;
+
+        height: 500px;
+        width: 400px;
+
+    }
+    
+
+
+    section#nuestrosprogramas div.container div.programa{
+        display: flex;  /*coloca al costad de otra*/
+        justify-content: center;
+    }
+
+
+    section#nuestrosprogramas div.container div.programa div.carta p{
+        display: block;     /*mostrar el texto en bloque*/
+        margin-bottom: 30px;
+    }
+
+
+    section#nuestrosprogramas div.container div.programa div.carta h2{
+        font-size: 4em;
+      }
+
+
+
+      section#nuestrosprogramas div.container div.programa div.carta h3{
+        margin-top: 0;
+      }
+
+
+    section#nuestrosprogramas div.container div.programa div.carta {
+            padding: 50px;
+            background-size: 100% 150px;
+            background-repeat: no-repeat;
+            background-position-y: 0;
+            background-color: rgb(50,50,50, 0.5);
+
+            box-shadow: 2px 2px 10px rgb(0,0,0, 0.5);
+
+    }
+
+
+        
+    section#nuestrosprogramas div.container div.carta:first-child{
+
+        background-image:
+        linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),  url("../imagenes/media/front-end-cropped.jpg");
+
+    }
+
+
+
+    section#nuestrosprogramas div.container div.carta:nth-child(2){
+
+        background-image:
+        linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),  url("../imagenes/media/full-stack-cropped.jpg");
+
+
+    }
+
+
+    section#nuestrosprogramas div.container div.carta:nth-child(3){
+
+        background-image:
+        linear-gradient(
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            ),  url("../imagenes/media/python-cropped.jpg");
+
+
+    }
+
+
+
+    section#caracteristicas{
+        background-image: url("../imagenes/media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+
+    }
+
+
+    section#caracteristicas div.container{
+        text-align: initial;    /*coloca al raz izquierdo para luego dar un marfgin*/
+    }
+
+
+    section#caracteristicas ul{
+        margin-left: 100px;
+    }
+
+
+    section#final h2{
+        font-size: 5em;
+    }
+
+    section#final button{
+        font-size: 2em;
+    }
+
+    footer div.container{
+        justify-content: flex-end;  /*colcoar al extremo derecha*/
+    }
+
+}
+
+
+@media(min-width: 1200px) {
+    section#caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
+
+
+
+
+
+
+
+
+
